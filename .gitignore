@@ -29,7 +29,6 @@ lerna-debug.log*
 
 # local env files
 .env*.local
-.env
 
 # vercel
 .vercel
@@ -39,7 +38,6 @@ lerna-debug.log*
 next-env.d.ts
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -69,3 +67,4 @@ logs
 *.temp
 .cache/
 
+config.bat
