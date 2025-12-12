@@ -9,7 +9,7 @@
     "long": "A fragrant oolong with floral aroma and lingering honeyed finish. Grown on family estates. Perfect for multiple steeps.",
     "origin": "Taiwan",
     "brew": "190°F / 1.5-3 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/Eastern-Beauty18-1-scaled.webp",
     "tags": ["oolong", "floral", "multi-steep"]
   },
   {
@@ -21,7 +21,7 @@
     "long": "Famous Wuyi rock oolong profile: roasted, mineral, complex.",
     "origin": "Wuyi Mountains, China",
     "brew": "200°F / 2-3 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/Wuyi-Oolong11-scaled.webp",
     "tags": ["oolong", "roasted"]
   },
   {
@@ -33,7 +33,7 @@
     "long": "High mountain oolong with floral, buttery notes. Excellent for multiple steeps.",
     "origin": "Taiwan",
     "brew": "195°F / 1.5-2.5 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/high_mountain-scaled.webp",
     "tags": ["oolong", "mountain"]
   },
   {
@@ -45,7 +45,7 @@
     "long": "Bright, vegetal green tea with umami depth. A daily tea.",
     "origin": "Japan",
     "brew": "175°F / 1-2 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/Sencha5-scaled.webp",
     "tags": ["japanese", "green", "umami"]
   },
   {
@@ -57,7 +57,7 @@
     "long": "Sencha blended with roasted brown rice — comforting & nutty.",
     "origin": "Japan",
     "brew": "175°F / 1-2 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/Genmaicha8-scaled.webp",
     "tags": ["japanese", "green", "comfort"]
   },
   {
@@ -69,7 +69,7 @@
     "long": "Sweet roasted chestnut notes with a clean finish.",
     "origin": "China",
     "brew": "175°F / 1-2 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/dragonwell1.webp",
     "tags": ["green", "chinese"]
   },
   {
@@ -81,7 +81,7 @@
     "long": "Hand-rolled green tea scented with jasmine blossoms.",
     "origin": "China",
     "brew": "175°F / 1-2 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/jasmine-pearl24-scaled.webp",
     "tags": ["floral", "scented"]
   },
   {
@@ -93,19 +93,7 @@
     "long": "A delicate white tea with a floral jasmine scent and soft mouthfeel.",
     "origin": "China",
     "brew": "160°F / 2-3 min",
-    "image": "/placeholder.svg?height=400&width=400",
+    "image": "/images/Jasmine-Silver-Needle5-2.webp",
     "tags": ["white", "floral"]
-  },
-  {
-    "id": "korean-woojeon-demo",
-    "name": "Korean Woojeon (Demo)",
-    "category": "Korean Green (Demo)",
-    "price": 14.0,
-    "short": "Demo Korean green to highlight Korean offering",
-    "long": "Placeholder Woojeon — included so we can demo a Korean green tea presence. Replace with real SKU/name if client provides one.",
-    "origin": "Korea (demo)",
-    "brew": "175°F / 1-2 min",
-    "image": "/placeholder.svg?height=400&width=400",
-    "tags": ["korean", "green", "demo"]
   }
 ]
