@@ -32,8 +32,8 @@ export function TeaAdvisorPanel({ product }: TeaAdvisorPanelProps) {
     `Perfect for ${product.brew.split("/")[1].trim()} brewing`,
   ]
 
-  const similar1 = similarProducts ? getProductById(similarProducts.similar[0]) : null
-  const similar2 = similarProducts ? getProductById(similarProducts.similar[1]) : null
+  const similar1 = similarProducts?.similar?.[0] ? getProductById(similarProducts.similar[0]) ?? null : null
+  const similar2 = similarProducts?.similar?.[1] ? getProductById(similarProducts.similar[1]) ?? null : null
 
   return (
     <>
