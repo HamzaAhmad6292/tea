@@ -106,6 +106,29 @@ export function TeaAdvisorPanel({ product }: TeaAdvisorPanelProps) {
     sendMessage(inputValue)
   }
 
+  const renderMarkdown = (text: string) => {
+    // Split by line breaks first, then process each line for bold text
+    const lines = text.split('\n')
+    return lines.map((line, lineIndex) => {
+      // Convert **text** to <strong>text</strong> within each line
+      const parts = line.split(/(\*\*.*?\*\*)/g)
+      const lineContent = parts.map((part, partIndex) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          const boldText = part.slice(2, -2)
+          return <strong key={`${lineIndex}-${partIndex}`}>{boldText}</strong>
+        }
+        return <span key={`${lineIndex}-${partIndex}`}>{part}</span>
+      })
+      
+      return (
+        <span key={lineIndex}>
+          {lineContent}
+          {lineIndex < lines.length - 1 && <br />}
+        </span>
+      )
+    })
+  }
+
   const handleCompare = () => {
     logAnalyticsEvent("AdvisorOpened", { productId: product.id })
     setShowComparison(true)
@@ -204,8 +227,8 @@ export function TeaAdvisorPanel({ product }: TeaAdvisorPanelProps) {
                 )}
 
                 {/* Chat Messages */}
-                <ScrollArea className="flex-1 border rounded-md p-4 min-h-[250px] max-h-[350px]">
-                  <div className="space-y-4">
+                <ScrollArea className="h-[350px] border rounded-md p-4">
+                  <div className="space-y-4 pr-4">
                     {messages.length === 0 ? (
                       <div className="text-center text-muted-foreground py-8">
                         <MessageCircle className="h-8 w-8 mx-auto mb-2 opacity-50" />
@@ -221,17 +244,19 @@ export function TeaAdvisorPanel({ product }: TeaAdvisorPanelProps) {
                             className={`max-w-[80%] rounded-lg p-3 ${
                               message.role === "user"
                                 ? "bg-primary text-primary-foreground"
-                                : "bg-secondary text-secondary-foreground"
+                                : "bg-[#5D4037] text-white"
                             }`}
                           >
-                            <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                            <p className="text-sm">
+                              {renderMarkdown(message.content)}
+                            </p>
                           </div>
                         </div>
                       ))
                     )}
                     {isLoading && (
                       <div className="flex justify-start">
-                        <div className="bg-secondary text-secondary-foreground rounded-lg p-3">
+                        <div className="bg-[#5D4037] text-white rounded-lg p-3">
                           <Loader2 className="h-4 w-4 animate-spin" />
                         </div>
                       </div>
@@ -241,7 +266,7 @@ export function TeaAdvisorPanel({ product }: TeaAdvisorPanelProps) {
                 </ScrollArea>
 
                 {/* Chat Input */}
-                <form onSubmit={handleSubmit} className="flex gap-2">
+                <form onSubmit={handleSubmit} className="flex gap-2 border-2 border-accent rounded-md p-2">
                   <Input
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}

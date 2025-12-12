@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create a system prompt based on the product
-    let systemPrompt = "You are a helpful tea expert assistant. Provide friendly, informative, and concise responses about tea."
+    let systemPrompt = "You are a helpful tea expert assistant. Provide friendly, informative, and very concise responses about tea. Keep your answers brief and to the point - aim for 2-3 sentences maximum."
     
     if (product) {
       const productInfo = product as Product
@@ -29,7 +29,7 @@ Product Details:
 - Brew Instructions: ${productInfo.brew}
 - Description: ${productInfo.short}
 
-Provide friendly, informative, and concise responses about this specific tea. Answer questions about brewing, flavor profile, origin, and any other tea-related topics. Keep responses conversational and helpful.`
+Provide friendly, informative, and very concise responses about this specific tea. Keep your answers brief and to the point - aim for 2-3 sentences maximum. Answer questions about brewing, flavor profile, origin, and any other tea-related topics. Be conversational but keep responses short.`
     }
 
     // Initialize conversation if needed (first message)
