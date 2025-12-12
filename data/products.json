@@ -1,0 +1,111 @@
+[
+  {
+    "id": "eastern-beauty-oolong",
+    "name": "Organic Eastern Beauty Oolong",
+    "category": "Oolong",
+    "price": 27.5,
+    "priceRange": "27.50 - 201.50",
+    "short": "Lightly oxidized, floral & honeyed",
+    "long": "A fragrant oolong with floral aroma and lingering honeyed finish. Grown on family estates. Perfect for multiple steeps.",
+    "origin": "Taiwan",
+    "brew": "190°F / 1.5-3 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["oolong", "floral", "multi-steep"]
+  },
+  {
+    "id": "wuyi-oolong",
+    "name": "Organic Wuyi Oolong",
+    "category": "Oolong",
+    "price": 10.5,
+    "short": "Mineral-rich, roasted oolong",
+    "long": "Famous Wuyi rock oolong profile: roasted, mineral, complex.",
+    "origin": "Wuyi Mountains, China",
+    "brew": "200°F / 2-3 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["oolong", "roasted"]
+  },
+  {
+    "id": "high-mountain-jade-oolong",
+    "name": "Organic High Mountain Jade Oolong",
+    "category": "Oolong",
+    "price": 12.5,
+    "short": "Creamy, high mountain floral oolong",
+    "long": "High mountain oolong with floral, buttery notes. Excellent for multiple steeps.",
+    "origin": "Taiwan",
+    "brew": "195°F / 1.5-2.5 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["oolong", "mountain"]
+  },
+  {
+    "id": "sencha",
+    "name": "Organic Sencha",
+    "category": "Japanese Green",
+    "price": 8.5,
+    "short": "Classic Japanese sencha — vegetal & umami",
+    "long": "Bright, vegetal green tea with umami depth. A daily tea.",
+    "origin": "Japan",
+    "brew": "175°F / 1-2 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["japanese", "green", "umami"]
+  },
+  {
+    "id": "genmaicha",
+    "name": "Organic Genmaicha",
+    "category": "Japanese Green",
+    "price": 7.5,
+    "short": "Toasty rice + green tea",
+    "long": "Sencha blended with roasted brown rice — comforting & nutty.",
+    "origin": "Japan",
+    "brew": "175°F / 1-2 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["japanese", "green", "comfort"]
+  },
+  {
+    "id": "dragonwell",
+    "name": "Organic Dragonwell",
+    "category": "Green",
+    "price": 8.5,
+    "short": "Classic Chinese pan-fired green",
+    "long": "Sweet roasted chestnut notes with a clean finish.",
+    "origin": "China",
+    "brew": "175°F / 1-2 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["green", "chinese"]
+  },
+  {
+    "id": "jasmine-pearl",
+    "name": "Organic Jasmine Pearl",
+    "category": "Floral",
+    "price": 12.5,
+    "short": "Delicately scented jasmine pearls",
+    "long": "Hand-rolled green tea scented with jasmine blossoms.",
+    "origin": "China",
+    "brew": "175°F / 1-2 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["floral", "scented"]
+  },
+  {
+    "id": "jasmine-silver-needle",
+    "name": "Organic Jasmine Silver Needle",
+    "category": "White",
+    "price": 13.5,
+    "short": "Silky white tea with jasmine",
+    "long": "A delicate white tea with a floral jasmine scent and soft mouthfeel.",
+    "origin": "China",
+    "brew": "160°F / 2-3 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["white", "floral"]
+  },
+  {
+    "id": "korean-woojeon-demo",
+    "name": "Korean Woojeon (Demo)",
+    "category": "Korean Green (Demo)",
+    "price": 14.0,
+    "short": "Demo Korean green to highlight Korean offering",
+    "long": "Placeholder Woojeon — included so we can demo a Korean green tea presence. Replace with real SKU/name if client provides one.",
+    "origin": "Korea (demo)",
+    "brew": "175°F / 1-2 min",
+    "image": "/placeholder.svg?height=400&width=400",
+    "tags": ["korean", "green", "demo"]
+  }
+]
